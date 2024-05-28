@@ -676,3 +676,8 @@ footer {
     opacity: 1;
   }
 }
+@media  and (max-width: 768px) {
+  .logo{
+    
+  }
+}
