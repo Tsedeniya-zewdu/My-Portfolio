@@ -1,0 +1,3 @@
+- do responsiveness and make sure to test it well using chrome dev tools- use different photos and make sure they are equal in size and make their background transparent 
+- update texts such as about me, my services, ... - update contact me section try add icons to before the texts and their font size should be similar like the others such as about me ...
+- try adding forms in contact me and implement a functionality to send you email when every a visitor send you message using that form- make technical skills shorter veristically and make sure the gap between each skills listed is equal
