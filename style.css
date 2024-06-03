@@ -51,8 +51,10 @@ h2 {
 .navbar a:hover {
   color: #0ef;
 }
+
 .home {
   position: relative;
+  display: block;
   width: 100%;
   justify-content: space-between;
   height: 100vh;
@@ -84,6 +86,8 @@ h2 {
 }
 .home-content p {
   font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 .home-sci a {
   display: inline-flex;
@@ -122,6 +126,7 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
+  margin-top:-100px;
 }
 .about-img img {
   padding-bottom: 20%;
@@ -168,15 +173,14 @@ h2 span {
 }
 .services-list {
   display: flex;
-
+align-items: center;
+justify-content: center;
   margin-top: 50px;
 }
 .services-list div {
   background-color: transparent;
   padding: 40px;
 
-  font-size: 13px;
-  font-weight: 13px;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
   box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
@@ -189,19 +193,13 @@ h2 span {
   margin-bottom: 30px;
   margin-left: 40%;
 }
-.services-list div h2 {
-  font-size: 30px;
+.services-list div h3 {
+  font-size: 25px;
   font-weight: 500;
   margin: 15px 0px;
   text-align: center;
 }
-.services-list div a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
+
 .services-list div img {
   width: 50px;
   padding: 0px;
@@ -240,7 +238,7 @@ h2 span {
   width: 100%;
 
   padding: 75px 90px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .heading1 {
   text-align: center;
@@ -410,11 +408,13 @@ h2 span {
 }
 
 .radial-bars {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+ 
+  
 }
 .radial-bars .radial-bar {
   width: 50%;
@@ -487,6 +487,9 @@ h2 span {
   opacity: 0;
 }
 
+.carousel{
+  width: 100;
+}
 .portfolio h2 {
   font-size: 60px;
   line-height: 1;
@@ -676,8 +679,137 @@ footer {
     opacity: 1;
   }
 }
-@media  and (max-width: 768px) {
-  .logo{
+
+@media screen and (max-width: 1000px) {
+  header {
+    position: fixed;
+    display: block;
+    margin-bottom: 100px;
+  }
+  .logo {
+    width: 100%;
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+  .home {
+    background-position: top 100px right -50px;
+    padding: 70px 20% 10% 5%;
+  }
+  .home-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: -3px 0px;
+  }
+  .home-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .home-content p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .about{
+    margin-bottom: 200px;
+  }
+  .skills{  
+    display: block;
+  }
+  footer{
+    display: block;
+    margin-top:-100px;
+  }
+  .card{
+    width: 50%;
     
   }
+  
+}
+@media screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    display: block;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .nav-sm {
+    display: flex;
+  }
+  .button-menu {
+    background: url(icon/menu-bar-icon.svg) no-repeat center center;
+    background-size: 50px;
+    padding: 0;
+    background-color: #081735;
+    height: 45px;
+    width: 60px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  header .navbar {
+    overflow: hidden;
+    background-color: #081735;
+    position: relative;
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  header .open {
+    height: auto;
+    width: auto;
+  }
+  header .open a {
+    font-size: 16px;
+
+    padding: 10px;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #404040;
+    display: block;
+  }
+  .home {
+    background-position: top 100px left;
+    padding: 70px 20% 10% 5%;
+    text-align: center;
+  }
+  .home-content .hello {
+    padding-top: 400px;
+  }
+  .home-content h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .home-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: -3px 0px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .about{
+    margin-top: 100px;
+  }
+  .services-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .services-list div{
+    
+   margin-bottom: 50px;
+  }
+  .services-list .service2{
+    margin: 0;
+  }
+ 
 }
