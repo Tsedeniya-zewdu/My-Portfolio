@@ -518,10 +518,12 @@ justify-content: center;
 .contact h2 span {
   color: #0ef;
 }
-footer h3 {
+.let {
   color: rgb(177, 177, 177);
-  font-size: 20px;
-  margin-right: 50px;
+  font-size: 30px;
+  font-weight: 700;
+margin: 0;
+  text-align: center;
 }
 
 footer {
@@ -529,6 +531,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top:-50px;
 }
 .contact h3 {
   text-align: center;
