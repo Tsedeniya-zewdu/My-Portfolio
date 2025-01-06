@@ -204,6 +204,10 @@ h2 span {
   width: 50px;
   padding: 0px;
 }
+.ubuntu {
+  font-size: 22px;
+  color: black;
+}
 .read {
   display: inline-block;
   padding: 12px 30px;
