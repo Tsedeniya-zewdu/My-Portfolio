@@ -126,7 +126,7 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
-  margin-top:-100px;
+  margin-top: -100px;
 }
 .about-img img {
   padding-bottom: 20%;
@@ -173,8 +173,8 @@ h2 span {
 }
 .services-list {
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
 }
 .services-list div {
@@ -301,144 +301,21 @@ justify-content: center;
   transform: scaleX(0);
   transform-origin: left;
 }
-.progress-line.html span {
-  width: 95%;
-}
-.progress-line.CSS span {
-  width: 90%;
-}
-.progress-line.JavaScript span {
-  width: 80%;
-}
-.progress-line.ReactJS span {
-  width: 50%;
-}
-.progress-line.NodeJS span {
-  width: 50%;
-}
-.progress-line.ExpressJS span {
-  width: 50%;
-}
-.progress-line.MongoDB span {
-  width: 90%;
-}
-.progress-line.MySQL span {
-  width: 95%;
-}
-.progress-line.Git span {
-  width: 80%;
-}
-.progress-line.GitHub span {
-  width: 90%;
-}
-.progress-line.MaterialUI span {
-  width: 90%;
-}
-.progress-line.Java span {
-  width: 90%;
-}
-.progress-line.Python span {
-  width: 80%;
-}
-.progress-line span::after {
-  position: absolute;
-  padding: 1px 8px;
-  background-color: #000;
-  color: #fff;
-  font-size: 12px;
-  border-radius: 3px;
-  top: -28px;
-  right: -20px;
-  animation: showText 0.5s 1.5s linear forwards;
-  opacity: 0;
-}
-.progress-line.html span::after {
-  content: "95%";
-}
-.progress-line.CSS span::after {
-  content: "90%";
-}
-.progress-line.JavaScript span::after {
-  content: "80%";
-}
-.progress-line.ReactJS span::after {
-  content: "50%";
-}
-.progress-line.NodeJS span::after {
-  content: "50%";
-}
-.progress-line.ExpressJS span::after {
-  content: "50%";
-}
-.progress-line.MongoDB span::after {
-  content: "90%";
-}
-.progress-line.MySQL span::after {
-  content: "95%";
-}
-.progress-line.Git span::after {
-  content: "80%";
-}
-.progress-line.GitHub span::after {
-  content: "90%";
-}
-.progress-line.MaterialUI span::after {
-  content: "90%";
-}
-.progress-line.Java span::after {
-  content: "90%";
-}
-.progress-line.Python span::after {
-  content: "80%";
-}
-
-.progress-line span::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0px;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-color: #000;
-  top: -10px;
-  right: 0;
-  animation: showText 0.5s 1.5s linear forwards;
-  opacity: 0;
-}
 
 .radial-bars {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
- 
-  
 }
 .radial-bars .radial-bar {
   width: 50%;
-  height: 170px;
-  margin-bottom: px;
+  height: 50px;
+  margin-bottom: 10px;
   position: relative;
 }
-.radial-bars .radial-bar svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  width: 120px;
-  height: 160px;
-}
-.radial-bars .radial-bar .progress-bar {
-  stroke-width: 10;
-  stop-color: black;
-  fill: transparent;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 502;
-  stroke-linecap: round;
-  animation: animate-bar 1s linear forwards;
-}
+
 @keyframes animate-bar {
   100% {
     stroke-dashoffset: -1;
@@ -487,7 +364,7 @@ justify-content: center;
   opacity: 0;
 }
 
-.carousel{
+.carousel {
   width: 100;
 }
 .portfolio h2 {
@@ -522,7 +399,7 @@ justify-content: center;
   color: rgb(177, 177, 177);
   font-size: 30px;
   font-weight: 700;
-margin: 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -531,7 +408,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top:-50px;
+  margin-top: -50px;
 }
 .contact h3 {
   text-align: center;
@@ -716,21 +593,19 @@ footer {
     font-size: 18px;
     font-weight: 600;
   }
-  .about{
+  .about {
     margin-bottom: 200px;
   }
-  .skills{  
+  .skills {
     display: block;
   }
-  footer{
+  footer {
     display: block;
-    margin-top:-100px;
+    margin-top: -100px;
   }
-  .card{
+  .card {
     width: 50%;
-    
   }
-  
 }
 @media screen and (max-width: 768px) {
   header {
@@ -800,19 +675,17 @@ footer {
     font-size: 18px;
     font-weight: 600;
   }
-  .about{
+  .about {
     margin-top: 100px;
   }
-  .services-list{
+  .services-list {
     display: flex;
     flex-direction: column;
   }
-  .services-list div{
-    
-   margin-bottom: 50px;
+  .services-list div {
+    margin-bottom: 50px;
   }
-  .services-list .service2{
+  .services-list .service2 {
     margin: 0;
   }
- 
 }
